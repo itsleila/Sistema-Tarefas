@@ -1,0 +1,1 @@
+import{F as r,G as t,j as a}from"./index-BW-55gT0.js";var e={},o=t;Object.defineProperty(e,"__esModule",{value:!0});var u=e.default=void 0,i=o(r()),l=a;u=e.default=(0,i.default)((0,l.jsx)("path",{d:"M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"}),"Done");export{u as d};
