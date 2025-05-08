@@ -9,7 +9,7 @@ O **Sistema de Tarefas** é uma aplicação desenvolvida em **React**, com foco 
 - **Interface responsiva:** Design mobile-first que se adapta a diferentes tamanhos de tela.
 - **Gerenciamento de Tarefas:** Crie, edite e exclua tarefas facilmente.
 - **Autenticação de usuários:** Integração com Firebase Auth para login e registro de usuários.
-  
+
 ## Tecnologias Utilizadas
 
 - **React**: Biblioteca JavaScript para construir interfaces de usuário.
@@ -19,12 +19,20 @@ O **Sistema de Tarefas** é uma aplicação desenvolvida em **React**, com foco 
 - **Styled Components**: Utilizado para estilizar componentes de forma dinâmica.
 - **Firebase Auth**: Serviço de autenticação que fornece uma maneira fácil de gerenciar usuários.
 
-## Acesso ao Projeto
+## ⚠️ Aviso Importante
 
-Infelizmente, a aplicação não está funcionando no momento. No entanto, você pode baixar o código e rodá-lo localmente para explorar suas funcionalidades. 
+Este projeto está com o banco de dados Firebase **desativado** por tempo indeterminado.  
+As funcionalidades de **cadastro e login reais** estão **desabilitadas**.
 
-Para isso, siga as instruções abaixo:
+O login é **simulado localmente**, sem conexão com banco de dados.
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/itsleila/Sistema-Tarefas.git
+---
+
+## 🚀 Como rodar o projeto localmente
+
+1. Clone o repositório:  
+   `git clone https://github.com/itsleila/Sistema-Tarefas.git`
+2. Instale as dependências:  
+   `npm install`
+3. Inicie o projeto:  
+   `npm run dev`

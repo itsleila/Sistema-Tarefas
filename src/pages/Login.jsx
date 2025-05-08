@@ -34,11 +34,12 @@ const LinkText = styled(Link)`
 
 const Login = ({ setUsuario }) => {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
+  const [email, setEmail] = useState('admin@example.com');
+  const [senha, setSenha] = useState('123456');
   const [error, setError] = useState('');
 
-  const handleLogin = async () => {
+  // para usar com firebase
+  /* const handleLogin = async () => {
     try {
       const { usuario, error, successMessage } = await fazerLogin(
         email,
@@ -57,6 +58,23 @@ const Login = ({ setUsuario }) => {
     } catch (error) {
       setError('Ocorreu um erro ao fazer login, tente novamente mais tarde.');
       console.error('Erro no login:', error);
+    }
+  }; */
+
+  // Usuário e senha padrão para testes sem firebase
+  const handleLogin = () => {
+    const usuarioPadrao = {
+      email: 'admin@example.com',
+      senha: '123456',
+    };
+
+    if (email === usuarioPadrao.email && senha === usuarioPadrao.senha) {
+      const usuario = { email };
+      setUsuario(usuario);
+      localStorage.setItem('usuario', JSON.stringify(usuario));
+      navigate('/home');
+    } else {
+      setError('Usuário ou senha inválidos.');
     }
   };
 
@@ -127,6 +145,21 @@ const Login = ({ setUsuario }) => {
               Esqueceu a senha?
             </Link>
           </Grid>
+          {error && (
+            <Typography
+              variant="body2"
+              sx={{
+                color: 'white',
+                backgroundColor: 'red',
+                padding: '6px',
+                borderRadius: '5px',
+                marginBottom: '10px',
+              }}
+              textAlign="center"
+            >
+              {error}
+            </Typography>
+          )}
           <Grid item xs={12} display="flex" justifyContent="center">
             <Button
               fullWidth
