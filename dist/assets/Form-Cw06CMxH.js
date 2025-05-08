@@ -1,4 +1,4 @@
-import{p as j,r as u,j as a,N as b,a as n,b as g}from"./index-BW-55gT0.js";import{b as v,d as y,e as D,D as e}from"./firebase-R8ppH_Du.js";import{D as x}from"./index-DR9Tm9sX.js";async function C(r){return(await v(y(D,"tarefas"),r)).id}const w=j.div`
+import{p as j,r as u,j as a,N as b,a as n,b as g}from"./index-B7f7ieIX.js";import{b as v,d as y,e as D,D as e}from"./firebase-B00g8A_j.js";import{D as x}from"./index-C_GkTooO.js";async function C(r){return(await v(y(D,"tarefas"),r)).id}const w=j.div`
   display: flex;
   justify-content: center;
   align-items: center;
